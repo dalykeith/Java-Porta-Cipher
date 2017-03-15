@@ -11,11 +11,17 @@ public class Runner {
 	
 	public static void mainMenu()
 	{
+		
 		int input = 0;
 		
 		do{
 			
 		input = UserInput("Please choose one: \n");
+		System.out.println("\t1.Parse");
+		System.out.println("\t2.Decrypt");
+		System.out.println("\t-1.End");
+		
+		input = scanner.nextInt();
 		
 		switch(input)
 		{
