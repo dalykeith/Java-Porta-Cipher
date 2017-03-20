@@ -6,7 +6,7 @@ public class Runner {
 	
 	
 	public static void main(String[] args) {
-		
+		mainMenu();
 	}//main
 	
 	public static void mainMenu()
@@ -16,10 +16,13 @@ public class Runner {
 		
 		do{
 			
-		input = UserInput("Please choose one: \n");
+		//input = UserInput
+			
+		System.out.println("Please choose one: \n");
 		System.out.println("\t1.Parse");
 		System.out.println("\t2.Decrypt");
-		System.out.println("\t-1.End");
+		System.out.println("\t3.End");
+		input = scanner.nextInt();
 		
 		input = scanner.nextInt();
 		
