@@ -30,6 +30,24 @@ public class Parse {
 		BufferedReader br = runParse(location);
 		int s;
 		
-		try{}catch(FileNotFoundException e){}
+		try
+		{
+			BufferedWriter bw = new BufferedWriter (new FileWriter("output.txt"));
+			while((s = br.read())!=-1)
+			{
+				char c = Decrypt.startDecrypt();
+				bw.write(c);
+			}
+			br.close();
+			bw.close();
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("File or URL Not Found");
+		}
+		catch(IOException e)
+		{
+			System.out.println("File or URL Not Found");
+		}
 	}
 }
